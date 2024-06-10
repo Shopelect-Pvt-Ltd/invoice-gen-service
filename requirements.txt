@@ -6,3 +6,4 @@ loguru
 python-dotenv
 pandas
 requests
+pymongo
