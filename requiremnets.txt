@@ -1,8 +1,0 @@
-boto3
-psycopg2-binary
-python-decouple
-tendo
-loguru
-python-dotenv
-pandas
-requests
