@@ -5,7 +5,7 @@ import concurrent.futures
 from tendo import singleton
 from dotenv import load_dotenv
 load_dotenv()
-
+import os
 # Use the provided MongoDB connection string
 MONGO_URL = os.getenv("MONGO_URL")
 QUERY_LIMIT = 800
