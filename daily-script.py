@@ -3,9 +3,11 @@ import requests
 import time
 import concurrent.futures
 from tendo import singleton
+from dotenv import load_dotenv
+load_dotenv()
 
 # Use the provided MongoDB connection string
-MONGO_URL = 'mongodb://airlinedb_user:8649OV57IGR3Y1JS@ec2-43-205-133-199.ap-south-1.compute.amazonaws.com/admin?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.3'
+MONGO_URL = os.getenv("MONGO_URL")
 QUERY_LIMIT = 800
 API_LIMIT = MAX_WORKERS = 5
 
